@@ -1,6 +1,6 @@
 title: "Guillaume Huon de Kermadec"
 description: "Site personnel – CV, réalisations, articles"
-url: ""                      # (optionnel) ajoute https://huondekermadec.com quand le domaine pointe
+url: "gdekermadec.com"                      # (optionnel) ajoute https://huondekermadec.com quand le domaine pointe
 baseurl: ""                 # laisse vide pour un user site
 
 # Pour GitHub Pages (thème minimal maison)

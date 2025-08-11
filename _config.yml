@@ -1,0 +1,20 @@
+title: "Guillaume Huon de Kermadec"
+description: "Site personnel – CV, réalisations, articles"
+url: ""                      # (optionnel) ajoute https://huondekermadec.com quand le domaine pointe
+baseurl: ""                 # laisse vide pour un user site
+
+# Pour GitHub Pages (thème minimal maison)
+theme: null
+markdown: kramdown
+kramdown:
+  input: GFM
+permalink: /blog/:title/
+plugins: []                 # GitHub Pages va gérer sans plugins
+
+# Données perso
+author:
+  name: "Guillaume Huon de Kermadec"
+  email: "contact@gdekermadec.com"
+  location: "France / Russie"
+  socials:
+    linkedin: "https://www.linkedin.com/in/guillaume-de-k-59a2901/

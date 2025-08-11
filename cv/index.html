@@ -1,0 +1,294 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Guillaume de Kermadec — CV / Resume (EN • FR • RU)</title>
+  <meta name="description" content="Tri‑lingual resume of Guillaume de Kermadec — Trader, derivatives & fixed‑income strategies, ex-hedge fund, ex-Leroy Merlin Russia director." />
+  <style>
+    :root{
+      --bg:#0b0f14;--fg:#e6edf3;--muted:#a6b3c2;--card:#121923;--b:#1e2936;--acc:#52a3ff;--chip:#0d1622
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.6 system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial}
+    .wrap{max-width:980px;margin:0 auto;padding:32px 18px 60px}
+    header{display:flex;gap:18px;align-items:center;justify-content:space-between;flex-wrap:wrap}
+    h1{font-size:34px;margin:6px 0}
+    h2{font-size:22px;margin:24px 0 10px}
+    h3{font-size:18px;margin:10px 0 6px}
+    p{margin:6px 0}
+    .card{background:var(--card);border:1px solid var(--b);border-radius:16px;padding:18px}
+    .row{display:grid;grid-template-columns:1.1fr .9fr;gap:16px}
+    @media (max-width:860px){.row{grid-template-columns:1fr}}
+    .chips{display:flex;flex-wrap:wrap;gap:8px}
+    .chip{background:var(--chip);border:1px solid var(--b);border-radius:999px;padding:6px 10px;font-size:13px;color:var(--muted)}
+    .muted{color:var(--muted)}
+    .langbar{display:flex;gap:8px;align-items:center}
+    .btn{padding:8px 12px;border:1px solid var(--b);background:#0e1520;color:var(--fg);border-radius:12px;cursor:pointer}
+    .btn[aria-current="true"]{background:var(--acc);color:#041020;border-color:#2d79c7}
+    a{color:var(--acc);text-decoration:none}
+    .grid{display:grid;gap:12px}
+    .section{margin-top:18px}
+    .meta{display:flex;gap:10px;flex-wrap:wrap}
+    .meta span{background:var(--chip);border:1px solid var(--b);border-radius:10px;padding:4px 8px;font-size:12px;color:var(--muted)}
+    footer{margin-top:26px;color:var(--muted);font-size:14px}
+    .lang{display:none}
+    .lang.active{display:block}
+  </style>
+  <script>
+    function setLang(l){
+      document.querySelectorAll('.lang').forEach(el=>el.classList.remove('active'));
+      document.querySelectorAll('[data-lang="'+l+'"]').forEach(el=>el.classList.add('active'));
+      document.querySelectorAll('.btn[data-switch]').forEach(b=>b.setAttribute('aria-current', b.dataset.switch===l));
+      localStorage.setItem('cv_lang', l);
+      document.documentElement.lang = l==='ru'?'ru':(l==='fr'?'fr':'en');
+    }
+    document.addEventListener('DOMContentLoaded',()=>{
+      const l = localStorage.getItem('cv_lang') || 'en';
+      setLang(l);
+    });
+  </script>
+  
+  <!-- Structured data for SEO -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org","@type":"Person",
+    "name":"Guillaume de Kermadec",
+    "email":"mailto:guillaume.hdk@gmail.com",
+    "telephone":"+7-925-0266323",
+    "jobTitle":"Trader (Derivatives)",
+    "knowsLanguage":["fr","en","ru"],
+    "address":{"@type":"PostalAddress","addressLocality":"Moscow"},
+    "url":"https://example.com"
+  }
+  </script>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div>
+        <h1>Guillaume de Kermadec</h1>
+        <div class="muted">Trader — Derivatives • Fixed‑Income • Options • Quant</div>
+      </div>
+      <div class="langbar">
+        <button class="btn" data-switch="en" onclick="setLang('en')">EN</button>
+        <button class="btn" data-switch="fr" onclick="setLang('fr')">FR</button>
+        <button class="btn" data-switch="ru" onclick="setLang('ru')">RU</button>
+      </div>
+    </header>
+
+    <div class="card section">
+      <div class="row">
+        <div>
+          <div class="lang" data-lang="en">
+            <p><strong>Based in</strong> Moscow • <strong>Citizenship</strong>: France & Russia • Eligible to work in both</p>
+            <p><strong>Contact</strong> — <a href="mailto:guillaume.hdk@gmail.com">guillaume.hdk@gmail.com</a> • +7 925 026‑63‑23</p>
+            <p class="muted">Target: Trader • also open to Asset/Portfolio Mgmt, Strategy, PWM — full/part‑time, project, on‑site or remote.</p>
+          </div>
+          <div class="lang" data-lang="fr">
+            <p><strong>Basé</strong> à Moscou • <strong>Nationalités</strong> : française & russe • Autorisé à travailler dans les deux pays</p>
+            <p><strong>Contact</strong> — <a href="mailto:guillaume.hdk@gmail.com">guillaume.hdk@gmail.com</a> • +7 925 026‑63‑23</p>
+            <p class="muted">Cible : Trader — ouvert aussi à la gestion d’actifs/portefeuille, conseil en stratégie, gestion privée — CDI/CDD, mission, présentiel ou remote.</p>
+          </div>
+          <div class="lang" data-lang="ru">
+            <p><strong>Местоположение</strong>: Москва • <strong>Гражданство</strong>: Франция и Россия • Право на работу в обеих странах</p>
+            <p><strong>Контакты</strong> — <a href="mailto:guillaume.hdk@gmail.com">guillaume.hdk@gmail.com</a> • +7 925 026‑63‑23</p>
+            <p class="muted">Цель: Трейдер; также открыт к управлению активами/портфелем, стратегическому консалтингу, private wealth — полный/частичный день, проекты, офис/удалённо.</p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="lang" data-lang="en">
+            <h3>Professional Snapshot</h3>
+            <p>Seasoned derivatives trader: futures, options, relative‑value & yield‑curve trades. Track record up to 15% monthly returns with strict risk control. Looking to join a high‑calibre desk to leverage and deepen quantitative expertise.</p>
+          </div>
+          <div class="lang" data-lang="fr">
+            <h3>Profil</h3>
+            <p>Trader dérivés expérimenté : futures, options, relative‑value & trades de courbe. Track‑record jusqu’à 15 % mensuels, gestion du risque rigoureuse. Recherche un desk exigeant pour développer davantage l’expertise quantitative.</p>
+          </div>
+          <div class="lang" data-lang="ru">
+            <h3>Профиль</h3>
+            <p>Опытный трейдер деривативов: фьючерсы, опционы, относительная стоимость и сделки по кривой доходности. До 15% в месяц при жёстком контроле риска. Ищу сильную команду для дальнейшего роста квант‑экспертизы.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section grid">
+      <div class="card">
+        <div class="lang" data-lang="en"><h2>Experience</h2></div>
+        <div class="lang" data-lang="fr"><h2>Expérience</h2></div>
+        <div class="lang" data-lang="ru"><h2>Опыт работы</h2></div>
+
+        <div class="lang" data-lang="en">
+          <h3>Independent Proprietary Trader — Derivatives (Feb 2019 – present, Moscow)</h3>
+          <ul>
+            <li>Intraday trading of bond & equity‑index futures/options (US Treasuries & European gov‑bonds); relative‑value strategies.</li>
+            <li>Yield‑curve swing trades; design & deployment of automated strategies (Python, back‑tests, auto‑execution).</li>
+          </ul>
+          <div class="meta"><span>Fixed‑Income</span><span>Options</span><span>Algo</span><span>Python</span></div>
+
+          <h3>Northpole Arbitrage — Quantitative Trader (May 2021 – May 2024, Canada)</h3>
+          <ul>
+            <li>Systematic research on US equities; Python modelling; live execution with active SPY hedging.</li>
+            <li>Ran a French‑language trading room; risk oversight; ad‑hoc teaching.</li>
+            <li>~100 strategies tested; 10+ live & profitable (≥0.1% ROI / $100k).</li>
+          </ul>
+
+          <h3>Leroy Merlin Russia — Head of Master Data (May 2013 – Feb 2019)</h3>
+          <ul>
+            <li>Built the MDM team from 0→40; product onboarding & data‑quality processes; prepared marketplace launch.</li>
+            <li>Led €15m PIM project (STEP/Stibo); met KPIs on accuracy & completeness.</li>
+          </ul>
+          <p class="muted">Career path: Head of MDM (11/2017–02/2019) • PIM Project Director (09/2015–11/2017) • Financial Controller (05/2013–09/2015)</p>
+
+          <h3>Chanel — Financial Controller (Dec 2010 – Feb 2013)</h3>
+          <ul>
+            <li>Margin analysis, BI roll‑outs, opening regional DCs; stock & COGS control across FR/IT.</li>
+          </ul>
+
+          <h3>Accenture — Senior Consultant, SAP BI/FI‑CO (Mar 2007 – Dec 2010)</h3>
+          <ul>
+            <li>Led a 5‑consultant SAP BI project; authored functional specs; luxury sector clients (L’Oréal, Shiseido, Areva).</li>
+          </ul>
+        </div>
+
+        <div class="lang" data-lang="fr">
+          <h3>Trader Indépendant — Dérivés (févr. 2019 – présent, Moscou)</h3>
+          <ul>
+            <li>Intraday sur futures/options indices & taux (USTs & obligations d’État européennes); stratégies « relative‑value ».</li>
+            <li>Trading sur la courbe des taux, conception/déploiement de stratégies auto (Python, backtests, auto‑exec).</li>
+          </ul>
+          <div class="meta"><span>Fixed‑Income</span><span>Options</span><span>Algo</span><span>Python</span></div>
+
+          <h3>Northpole Arbitrage — Trader Quantitatif (mai 2021 – mai 2024, Canada)</h3>
+          <ul>
+            <li>Recherche de stratégies systématiques sur les actions US; modélisation en Excel/Python; exécution live avec bêta hedging sur le SPY.</li>
+            <li>Animation d’une trading‑room francophone; suivi du risque; formation ponctuelle.</li>
+            <li>~100 stratégies testées; 10+ live & rentables (ROI ≥0,1 % / 100 k$).</li>
+          </ul>
+
+          <h3>Leroy Merlin Russie — Head of Master Data (mai 2013 – févr. 2019)</h3>
+          <ul>
+            <li>Création de l’équipe MDM (0→40); onboarding produit & qualité de données; préparation à l'omnicanal.</li>
+            <li>Pilotage PIM, budget de 15 M€ (STEP/Stibo); KPIs d’exactitude & complétude des données.</li>
+          </ul>
+          <p class="muted">Parcours : Head MDM (11/2017–02/2019) • PIM Project Director (09/2015–11/2017) • Contrôleur Financier (05/2013–09/2015)</p>
+
+          <h3>Chanel — Contrôleur de gestion (déc. 2010 – févr. 2013)</h3>
+          <ul>
+            <li>Analyse des marge, déploiements reporting BI, ouverture de DC régionaux; contrôle des stocks.</li>
+          </ul>
+
+          <h3>Accenture — Senior Consultant, SAP BI/FI‑CO (mars 2007 – déc. 2010)</h3>
+          <ul>
+            <li>Mise en place de projets SAP BI; specs fonctionnelles; clients luxe (L’Oréal, Shiseido, Areva).</li>
+          </ul>
+        </div>
+
+        <div class="lang" data-lang="ru">
+          <h3>Независимый проп‑трейдер — деривативы (февр. 2019 – наст. время, Москва)</h3>
+          <ul>
+            <li>Интрадей по фьючерсам/опционам на индексы и облигации (USTs и гос‑облигации Европы); стратегии относительной стоимости.</li>
+            <li>Сделки по кривой доходности; разработка и запуск авто‑стратегий (Excel, Python, бэктесты, авто‑исполнение).</li>
+          </ul>
+          <div class="meta"><span>Fixed‑Income</span><span>Опционы</span><span>Алго</span><span>Python</span></div>
+
+          <h3>Northpole Arbitrage — Квант‑трейдер (май 2021 – май 2024, Канада)</h3>
+          <ul>
+            <li>Статистические арбитражи акций США; моделирование на Python; лайв‑исполнение с активным хеджем на SPY.</li>
+            <li>Вёл франкоязычную трейдинг‑рум; риск‑контроль; обучающие сессии.</li>
+            <li>Протестировано ~100 стратегий; 10+ вышли в лайв и были прибыльны (ROI ≥0,1% на $100k).</li>
+          </ul>
+
+          <h3>Leroy Merlin Russia — Руководитель отдела Master Data (май 2013 – февр. 2019)</h3>
+          <ul>
+            <li>Создание команды MDM с нуля (0→40); процессы создания товаров и отслеживания качества данных; подготовка маркетплейса.</li>
+            <li>Руководство PIM‑проектом €15 млн (STEP/Stibo); достижение KPI по точности и полноте мастер данных.</li>
+          </ul>
+          <p class="muted">Карьерный путь: Head MDM (11/2017–02/2019) • PIM Project Director (09/2015–11/2017) • Финансовый контролёр (05/2013–09/2015)</p>
+
+          <h3>Chanel — Финансовый контролёр (дек. 2010 – февр. 2013)</h3>
+          <ul>
+            <li>Анализ маржинальности, BI‑внедрения, открытие региональных РЦ; контроль запасов и себестоимости (Франция/Италия).</li>
+          </ul>
+
+          <h3>Accenture — Старший консультант, SAP BI/FI‑CO (март 2007 – дек. 2010)</h3>
+          <ul>
+            <li>Руководство проектом SAP BI (5 консультантов); функциональные спецификации; клиенты люкс‑сектора (L’Oréal, Shiseido, Areva).</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="lang" data-lang="en"><h2>Education</h2></div>
+        <div class="lang" data-lang="fr"><h2>Formation</h2></div>
+        <div class="lang" data-lang="ru"><h2>Образование</h2></div>
+
+        <div class="lang" data-lang="en">
+          <p><strong>Grenoble Ecole de Management</strong> — MSc, Executive Management of IS & Digital Tech (2005)</p>
+          <p><strong>Graduate School of Engineering in Mathematics & CS</strong> — MSc (Engineering), Complex Systems Design (2004)</p>
+        </div>
+        <div class="lang" data-lang="fr">
+          <p><strong>Grenoble Ecole de Management</strong> — MSc, Management des SI & Tech. digitales (2005)</p>
+          <p><strong>École d’ingénieurs (Maths & Info)</strong> — MSc Ingénieur, Conception de systèmes complexes (2004)</p>
+        </div>
+        <div class="lang" data-lang="ru">
+          <p><strong>Grenoble Ecole de Management</strong> — MSc, Управление ИС и цифровыми технологиями (2005)</p>
+          <p><strong>Инженерная школа (математика и информатика)</strong> — MSc, Проектирование сложных систем (2004)</p>
+        </div>
+
+        <div class="section">
+          <div class="lang" data-lang="en"><h2>Skills</h2></div>
+          <div class="lang" data-lang="fr"><h2>Compétences</h2></div>
+          <div class="lang" data-lang="ru"><h2>Навыки</h2></div>
+
+          <div class="lang" data-lang="en">
+            <div class="chips">
+              <span class="chip">Futures & Options</span>
+              <span class="chip">Relative‑Value</span>
+              <span class="chip">Yield‑Curve</span>
+              <span class="chip">Volatility</span>
+              <span class="chip">Python • Back‑testing</span>
+              <span class="chip">Bloomberg • Reuters</span>
+              <span class="chip">Data Governance • SAP BI/ECC</span>
+              <span class="chip">French (Native) • English (C2) • Russian (C2)</span>
+            </div>
+          </div>
+          <div class="lang" data-lang="fr">
+            <div class="chips">
+              <span class="chip">Futures & Options</span>
+              <span class="chip">Relative‑Value</span>
+              <span class="chip">Courbe des taux</span>
+              <span class="chip">Volatilité</span>
+              <span class="chip">Python • Backtests</span>
+              <span class="chip">Bloomberg • Reuters</span>
+              <span class="chip">Gouvernance de données • SAP BI/ECC</span>
+              <span class="chip">Français (natif) • Anglais (C2) • Russe (C2)</span>
+            </div>
+          </div>
+          <div class="lang" data-lang="ru">
+            <div class="chips">
+              <span class="chip">Фьючерсы и опционы</span>
+              <span class="chip">Relative‑Value</span>
+              <span class="chip">Кривая доходности</span>
+              <span class="chip">Волатильность</span>
+              <span class="chip">Python • Бэктесты</span>
+              <span class="chip">Bloomberg • Reuters</span>
+              <span class="chip">Управление данными • SAP BI/ECC</span>
+              <span class="chip">FR (родной) • EN (C2) • RU (C2)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <span class="lang active" data-lang="en">Updated Aug 2025 • References available on request</span>
+      <span class="lang" data-lang="fr">Mise à jour août 2025 • Références sur demande</span>
+      <span class="lang" data-lang="ru">Актуально на август 2025 • Рекомендации по запросу</span>
+    </footer>
+  </div>
+</body>
+</html>
